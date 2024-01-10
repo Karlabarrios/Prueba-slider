@@ -1,128 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba Slider</title>
+    <title>CodePen - Intento 1000000</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.scss">
+
 </head>
+
 <body>
-    <header>
-        <h1>Prueba Slider</h1>
-    </header>
+    <!-- partial:index.partial.html -->
+    
+    
+    
+    <div class="container">
+    <div class="app">
 
-
-    <section class="slider">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-auto">
-
-                    <div class="app">
-                
-                        <div class="cardList">
-                            <button class="cardList__btn btn btn--left">
-                                <div class="icon">
-                                    <svg>
-                                        <use xlink:href="#arrow-left"></use>
-                                    </svg>
-                                </div>
-                            </button>
-                    
-                            <div class="cards__wrapper">
-                                <div class="card current--card">
-                                    <div class="card__image">
-                                        <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-                                    </div>
-                                </div>
-                    
-                                <div class="card next--card">
-                                    <div class="card__image">
-                                        <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-                                    </div>
-                                </div>
-                    
-                                <div class="card previous--card">
-                                    <div class="card__image">
-                                        <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <button class="cardList__btn btn btn--right">
-                                <div class="icon">
-                                    <svg>
-                                        <use xlink:href="#arrow-right"></use>
-                                    </svg>
-                                </div>
-                            </button>
-                        </div>
-                    
-                        <div class="infoList">
-                            <div class="info__wrapper">
-                                <div class="info current--info">
-                                    <h1 class="text name">Prueba</h1>
-                                    <h4 class="text location">Scotland</h4>
-                                    <p class="text description">The mountains are calling</p>
-                                </div>
-                    
-                                <div class="info next--info">
-                                    <h1 class="text name">Machu Pichu</h1>
-                                    <h4 class="text location">Peru</h4>
-                                    <p class="text description">Adventure is never far away</p>
-                                </div>
-                    
-                                <div class="info previous--info">
-                                    <h1 class="text name">Chamonix</h1>
-                                    <h4 class="text location">France</h4>
-                                    <p class="text description">Let your dreams come true</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    
-                        <div class="app__bg">
-                            <div class="app__bg__image current--image">
-                                <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-                            </div>
-                            <div class="app__bg__image next--image">
-                                <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-                            </div>
-                            <div class="app__bg__image previous--image">
-                                <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <svg class="icons" style="display: none;">
-                        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                            <polyline points='328 112 184 256 328 400'
-                                         style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-                        </symbol>
-                        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                            <polyline points='184 112 328 256 184 400'
-                                         style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-                        </symbol>
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
                     </svg>
+                </div>
+            </button>
 
+            <div class="cards__wrapper">
+                <div class="card current--card">
+                    <div class="card__image">
+                        <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                    </div>
+                </div>
 
+                <div class="card next--card">
+                    <div class="card__image">
+                        <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                    </div>
+                </div>
+
+                <div class="card previous--card">
+                    <div class="card__image">
+                        <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+
+        <div class="infoList">
+            <div class="info__wrapper">
+                <div class="info current--info">
+                    <h1 class="text name">Prueba</h1>
+                    <h4 class="text location">Scotland</h4>
+                    <p class="text description">The mountains are calling</p>
+                </div>
+
+                <div class="info next--info">
+                    <h1 class="text name">Machu Pichu</h1>
+                    <h4 class="text location">Peru</h4>
+                    <p class="text description">Adventure is never far away</p>
+                </div>
+
+                <div class="info previous--info">
+                    <h1 class="text name">Chamonix</h1>
+                    <h4 class="text location">France</h4>
+                    <p class="text description">Let your dreams come true</p>
                 </div>
             </div>
         </div>
-    </section>
 
 
-    <!--Scripts-->
-    <!--Scripts-->
-    
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!--Slider-->
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+                <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+                <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+                <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+            </div>
+        </div>
+    </div>
+
+
+    <svg class="icons" style="display: none;">
+        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+    </svg>
+
+</div>
+
+    <!-- partial -->
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
     <script>
         console.clear();
 
-        const { gsap, imagesLoaded } = window;
+        const {
+            gsap,
+            imagesLoaded
+        } = window;
 
         const buttons = {
             prev: document.querySelector(".btn--left"),
@@ -200,44 +193,41 @@
 
             gsap.timeline()
                 .to([buttons.prev, buttons.next], {
-                duration: 0.2,
-                opacity: 0.5,
-                pointerEvents: "none",
-            })
+                    duration: 0.2,
+                    opacity: 0.5,
+                    pointerEvents: "none",
+                })
                 .to(
-                currentInfoEl.querySelectorAll(".text"),
-                {
-                    duration: 0.4,
-                    stagger: 0.1,
-                    translateY: "-120px",
-                    opacity: 0,
-                },
-                "-="
-            )
+                    currentInfoEl.querySelectorAll(".text"), {
+                        duration: 0.4,
+                        stagger: 0.1,
+                        translateY: "-120px",
+                        opacity: 0,
+                    },
+                    "-="
+                )
                 .call(() => {
-                swapInfosClass(direction);
-            })
+                    swapInfosClass(direction);
+                })
                 .call(() => initCardEvents())
                 .fromTo(
-                direction === "right"
-                ? nextInfoEl.querySelectorAll(".text")
-                : previousInfoEl.querySelectorAll(".text"),
-                {
-                    opacity: 0,
-                    translateY: "40px",
-                },
-                {
-                    duration: 0.4,
-                    stagger: 0.1,
-                    translateY: "0px",
-                    opacity: 1,
-                }
-            )
+                    direction === "right" ?
+                    nextInfoEl.querySelectorAll(".text") :
+                    previousInfoEl.querySelectorAll(".text"), {
+                        opacity: 0,
+                        translateY: "40px",
+                    }, {
+                        duration: 0.4,
+                        stagger: 0.1,
+                        translateY: "0px",
+                        opacity: 1,
+                    }
+                )
                 .to([buttons.prev, buttons.next], {
-                duration: 0.2,
-                opacity: 1,
-                pointerEvents: "all",
-            });
+                    duration: 0.2,
+                    opacity: 1,
+                    pointerEvents: "all",
+                });
 
             function swapInfosClass() {
                 currentInfoEl.classList.remove("current--info");
@@ -303,31 +293,30 @@
             let tl = gsap.timeline();
 
             tl.to(cardsContainerEl.children, {
-                delay: 0.15,
-                duration: 0.5,
-                stagger: {
-                    ease: "power4.inOut",
-                    from: "right",
-                    amount: 0.1,
-                },
-                "--card-translateY-offset": "0%",
-            })
+                    delay: 0.15,
+                    duration: 0.5,
+                    stagger: {
+                        ease: "power4.inOut",
+                        from: "right",
+                        amount: 0.1,
+                    },
+                    "--card-translateY-offset": "0%",
+                })
                 .to(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
-                delay: 0.5,
-                duration: 0.4,
-                stagger: 0.1,
-                opacity: 1,
-                translateY: 0,
-            })
-                .to(
-                [buttons.prev, buttons.next],
-                {
+                    delay: 0.5,
                     duration: 0.4,
+                    stagger: 0.1,
                     opacity: 1,
-                    pointerEvents: "all",
-                },
-                "-=0.4"
-            );
+                    translateY: 0,
+                })
+                .to(
+                    [buttons.prev, buttons.next], {
+                        duration: 0.4,
+                        opacity: 1,
+                        pointerEvents: "all",
+                    },
+                    "-=0.4"
+                );
         }
 
         const waitForImages = () => {
@@ -363,10 +352,10 @@
                         if (totalImages == loadedImages) {
                             gsap.timeline()
                                 .to(".loading__wrapper", {
-                                duration: 0.5,
-                                opacity: 0,
-                                pointerEvents: "none",
-                            })
+                                    duration: 0.5,
+                                    opacity: 0,
+                                    pointerEvents: "none",
+                                })
                                 .call(() => init());
                         }
                     }
@@ -376,6 +365,5 @@
 
         waitForImages();
     </script>
-    
-</body>
-</html>
+
+</body></html>
